@@ -11,7 +11,7 @@ async function getAllBrands() {
         .then((response) => response.json())
         .then((data) => (brands = data))
         .catch((_) => console.log("Error"));
-    console.log(brands);
+    // console.log(brands);
     return brands;
 }
 
@@ -25,7 +25,7 @@ async function getAllModels(brand) {
         .then((response) => response.json())
         .then((data) => (models = data.modelos))
         .catch((_) => console.log("Error"));
-    console.log(models);
+    // console.log(models);
     return models;
 }
 
@@ -42,7 +42,7 @@ async function getAllYears(brand, model) {
         .then((response) => response.json())
         .then((data) => (years = data))
         .catch((_) => console.log("Error"));
-    console.log(years);
+    // console.log(years);
     return years;
 }
 
@@ -59,7 +59,7 @@ async function getVehValue(brand, model, year) {
         .then((response) => response.json())
         .then((data) => (vehValue = data))
         .catch((_) => console.log("Error"));
-    console.log(vehValue);
+    // console.log(vehValue);
     return vehValue;
 }
 
