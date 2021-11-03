@@ -40,6 +40,8 @@ brands_combo.addEventListener("change", async function () {
             new Option((text = model.nome), (value = model.codigo))
         );
     });
+    years_combo.innerHTML = '<option selected="" value="">Choose...</option>';
+    vehValue_input.value = "";
 });
 
 models_combo.addEventListener("change", async function () {
@@ -50,6 +52,7 @@ models_combo.addEventListener("change", async function () {
             new Option((text = year.nome), (value = year.codigo))
         );
     });
+    vehValue_input.value = "";
 });
 
 years_combo.addEventListener("change", async function () {
