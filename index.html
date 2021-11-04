@@ -10,47 +10,43 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-P3F9ZCMX7N"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-P3F9ZCMX7N");
+        </script>
         <title>FIPE - Vehicle Market Price</title>
     </head>
     <body>
         <div class="header mx-auto my-3 text-center">
-            <img class="img" src="./img/logo_fipe.png" alt="">
+            <img class="img" src="./img/logo_fipe.png" alt="" />
         </div>
         <div class="container">
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-lg-6 col-xl-3">
-                    <label for="brands_list" class="form-label"
-                        >Brands</label
-                    >
-                    <select
-                        class="form-select"
-                        id="brands_list"
-                        required
-                    >
+                    <label for="brands_list" class="form-label">Brands</label>
+                    <select class="form-select" id="brands_list" required>
                         <option selected value="">Choose...</option>
                     </select>
                 </div>
                 <div class="col-lg-6 col-xl-3">
-                    <label for="models_list" class="form-label"
-                        >Models</label
-                    >
-                    <select
-                        class="form-select"
-                        id="models_list"
-                        required
-                    >
+                    <label for="models_list" class="form-label">Models</label>
+                    <select class="form-select" id="models_list" required>
                         <option selected value="">Choose...</option>
                     </select>
                 </div>
                 <div class="col-lg-6 col-xl-3">
-                    <label for="years_list" class="form-label"
-                        >Years</label
-                    >
-                    <select
-                        class="form-select"
-                        id="years_list"
-                        required
-                    >
+                    <label for="years_list" class="form-label">Years</label>
+                    <select class="form-select" id="years_list" required>
                         <option selected value="">Choose...</option>
                     </select>
                 </div>
@@ -58,19 +54,12 @@
                     <label for="vehValue_input" class="form-label"
                         >FIPE Value</label
                     >
-                    <input
-                        class="form-control"
-                        id="vehValue_input"
-                        disabled
-                    >
+                    <input class="form-control" id="vehValue_input" disabled />
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary" type="reset">
-                        Reset
-                    </button>
+                    <button class="btn btn-primary" type="reset">Reset</button>
                 </div>
             </form>
-
         </div>
         <div class="footer"></div>
         <script src="./consumeAPI.js"></script>
